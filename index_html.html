@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Manager - JavaScript Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Personal Task Manager</h1>
+            <p>JavaScript Assignment - Demonstrating Variables, Functions, Loops & DOM</p>
+        </div>
+        
+        <div class="main-content">
+            <!-- Task Management Section -->
+            <div class="section">
+                <h2>📝 Add New Task</h2>
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Enter your task...">
+                    <select id="prioritySelect">
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button onclick="addTask()">Add Task</button>
+                    <button class="clear-btn" onclick="clearAllTasks()">Clear All</button>
+                </div>
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="section">
+                <h2>📊 Task Statistics</h2>
+                <div class="stats" id="taskStats">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Demo Section -->
+            <div class="section">
+                <h2>🔍 JavaScript Concepts Demo</h2>
+                <button onclick="runDemo()">Run Concepts Demo</button>
+                <div id="demo-output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
